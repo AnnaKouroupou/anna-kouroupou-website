@@ -6,6 +6,10 @@ fields:
   name: thumbnail
   label: Thumbnail
   description: This will only show up on the front page
+- type: boolean
+  name: wide
+  label: Wide Thumbnail
+  description: This project will take the space of 2 projects on the grid!
 - type: text
   name: title
   label: Title
@@ -25,16 +29,6 @@ fields:
 - type: tag_list
   name: categories
   label: Categories
-- type: color
-  name: project_bg_color
-  config:
-    color_format: Hex
-  label: Background color
-- type: color
-  name: project_fg_color
-  config:
-    color_format: Hex
-  label: Foreground color
 pages:
 - projects/3d-graff.md
 - projects/chelsea-landmark.md

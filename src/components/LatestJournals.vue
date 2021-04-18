@@ -1,27 +1,40 @@
 <template>
-    <div>
-        <div class="latest-journals-heading container">
-        <span class="label">Latest and greatest</span>
-        </div>
-        <div class="latest-journals">
-        <div class="container">
-            <g-link :to="item.node.path" class="journal" v-for="item in journals" :key="item.node.id">
-              <h3 class="journal-title">{{ item.node.title }}</h3>
-            </g-link>
-        </div>
-        </div>
+  <div>
+    <div class="latest-journals-heading container">
+      <span class="label">Latest and greatest</span>
     </div>
+    <div class="latest-journals">
+      <div class="container">
+        <g-link
+          :to="item.node.path"
+          class="journal"
+          v-for="item in journals"
+          :key="item.node.id"
+        >
+          <span class="journal-date">{{ item.node.date }}</span>
+          <h3 class="journal-title">{{ item.node.title }}</h3>
+        </g-link>
+        <g-link
+          to="/journal"
+          class="journal journal-centered"
+          key="test"
+        >
+          <h3 class="journal-title journal-link-to-more">See more</h3>
+        </g-link>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-    props: {
-        journals: {
-            type: Array,
-            required: true
-        }
-    }
-}
+  props: {
+    journals: {
+      type: Array,
+      required: true,
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -58,9 +71,23 @@ export default {
   background: var(--color-base-1);
 }
 
+.journal-date {
+  font-size: 0.7rem;
+}
+
 .journal-title {
   font-size: 1rem;
   line-height: 1.35;
+}
+
+.journal-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.journal-link-to-more {
+  font-weight: normal;
+  color:var(--color-main);
 }
 
 @media (min-width: 580px) {
@@ -108,5 +135,4 @@ export default {
     border-bottom: 1px solid var(--color-base-1);
   }
 }
-
 </style>

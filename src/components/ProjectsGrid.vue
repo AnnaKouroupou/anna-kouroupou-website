@@ -1,15 +1,17 @@
 <template>
-    <div class="projects">
-        <div class="project" v-for="item in projects" :key="item.node.id">
+    <div class="projects small">
+        <div :class="{ project: true, wide: item.node.wide }" v-for="item in projects" :key="item.node.id">
             <g-link :to="item.node.path" class="project-link">
             <g-image
                 :src="item.node.thumbnail"
                 :alt="item.node.title"
                 class="thumbnail"
             />
+            <div class="project-details">
             <h3 class="project-title">{{ item.node.title }}</h3>
             <div class="categories">
                 <span class="category" v-for="(item, index) in item.node.categories" :key="index">{{ item }}</span>
+            </div>
             </div>
             </g-link>
         </div>
@@ -22,6 +24,10 @@ export default {
         projects: {
             type: Array,
             required: true
+        },
+        small: {
+          type: Boolean,
+          default: false
         }
     }
 }
@@ -30,26 +36,39 @@ export default {
 <style scoped>
 .projects {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 4rem;
 }
 .project {
-  grid-column: auto / span 2;
+  grid-column: auto / span 3;
   text-align: center;
 }
 .project-link {
   text-decoration: none;
 }
 .thumbnail {
+  background-color: #F3F3F3;
+  /* padding: 1rem; */
   height: 560px;
   object-fit: cover;
   transition: all 0.15s ease;
-  box-shadow: 0 0 40px -20px rgba(0,0,0,0.25);
+  /* box-shadow: 0 0 40px -20px rgba(0,0,0,0.25); */
+}
+.projects.small .thumbnail {
+  height: 400px;
+}
+.project-details {
+  margin-top: 1rem; 
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .project-title {
+  text-align: start;
   font-size: 1rem;
   color: var(--color-contrast);
-  margin: 2rem 0 1rem 0;
+  margin: 0 2rem 0 0;
 }
 .categories {
   font-size: 0.8rem;
@@ -70,7 +89,10 @@ export default {
   .project {
     grid-column: auto / span 1;
   }
-  .project:nth-child(3n+1) {
+  /* .project:nth-child(3n+1) {
+    grid-column: auto / span 2;
+  } */
+  .project.wide {
     grid-column: auto / span 2;
   }
 }

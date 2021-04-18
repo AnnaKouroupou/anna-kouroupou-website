@@ -25,6 +25,7 @@ export default {
 }
 
 body {
+  --color-main: #00afb9;
   --color-base: rgb(255, 255, 255);
   --color-base-1: rgb(243, 243, 243);
   --color-contrast: rgb(0, 0, 0);

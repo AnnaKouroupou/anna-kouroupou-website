@@ -1,26 +1,23 @@
 <template>
   <Layout>
-
     <div class="container">
       <div class="journal-hero">
-        <h1 class="journal-header">
-          a wise person once said...
-        </h1>
+        <h1 class="journal-header">a wise person once said...</h1>
       </div>
     </div>
 
-    <g-link 
+    <g-link
       :to="item.node.path"
-      v-for="item in $page.posts.edges" 
+      v-for="item in $page.posts.edges"
       :key="item.node.id"
       class="journal-post"
     >
       <div class="container journal">
+        <span class="journal-date">{{ item.node.date }}</span>
         <h2 class="journal-title">{{ item.node.title }}</h2>
         <p class="journal-excerpt">{{ item.node.excerpt }}</p>
       </div>
     </g-link>
-      
   </Layout>
 </template>
 
@@ -33,6 +30,7 @@ query Journal {
         path
         title
         excerpt
+        date (format: "D MMMM YYYY")
       }
     }
   }
@@ -40,8 +38,7 @@ query Journal {
 </page-query>
 
 <script>
-export default {
-}
+export default {};
 </script>
 
 <style scoped>
@@ -79,6 +76,10 @@ export default {
   margin: 0;
   padding: 0;
 }
+.journal-date {
+  font-size: 0.9rem;
+}
+
 .journal-title {
   font-size: 2rem;
   color: var(--color-contrast);

@@ -11,8 +11,9 @@
                 </g-link>
             </div>
             <nav class="nav right">
-                <g-link class="nav__link" to="/journal">Journal</g-link>
-                <g-link class="nav__link" to="/contact">Say Hi!</g-link>
+                <g-link class="nav__link" to="/projects">Projects</g-link>
+                <g-link class="nav__link" to="/journal">News & More</g-link>
+                <g-link class="nav__link" to="/contact">About Me</g-link>
             </nav>
         </div>
     </header>
@@ -34,6 +35,8 @@ export default {
     position: relative;
     height: 6rem;
     z-index: 10;
+    background-color: white;
+    opacity: 0.9;
 }
 .header.sticky {
     position: fixed;
@@ -75,9 +78,9 @@ export default {
     margin: 0;
 }
 .nav > *:hover {
-    border-color: inherit;
+    border-color: var(--color-main);
 }
 .nav > .active {
-    border-color: inherit;
+    border-color: var(--color-main);
 }
 </style>

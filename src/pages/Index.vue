@@ -10,7 +10,7 @@
 
 <page-query>
 query Posts {
-	projects: allProjectPost {
+	projects: allProjectPost (perPage: 3){
     edges {
       node {
         id
@@ -18,16 +18,18 @@ query Posts {
         title
         categories
         thumbnail (quality: 90)
+        wide
         path
       }
     }
   },
-  journals: allJournalPost (perPage: 4) {
+  journals: allJournalPost (perPage: 3) {
     edges {
       node {
         id
         path
         title
+        date (format: "D MMMM YYYY")
       }
     }
   }
