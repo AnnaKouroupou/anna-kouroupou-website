@@ -105,10 +105,11 @@ export default {
 }
 .category-options {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.category-options > button:not(:first-of-type) {
-  margin-left: 0.5rem;
+.category-options > button:not(:last-of-type) {
+  margin-right: 0.5rem;
 }
 
 .category-options > button {
@@ -117,6 +118,8 @@ export default {
   background: rgb(214, 214, 214);
   outline: none;
   border: 0;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
   font-size: 0.8rem;
   padding: 0.4rem 0.8rem;
   border-radius: 0.3rem;
