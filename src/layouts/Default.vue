@@ -54,10 +54,6 @@ h1 {
   padding: 0;
 }
 
-.layout.sticky-header {
-  padding: 6rem 0 0 0;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
