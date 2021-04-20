@@ -35,7 +35,7 @@
               </div>
 
               <div class="contact-us">
-                <a href="mailto:info@kouroupou.com" class="button">ask me about the product</a>
+                <a :href="`mailto:${settings.contact_email}?subject=I'm interested about project: ${$page.post.title}`" class="button">ask me about the project</a>
               </div>
             </div>
           </div>
@@ -77,6 +77,11 @@ import LatestJournals from "@/components/LatestJournals"
 export default {
   components: {
     LatestJournals
+  },
+  data() {
+    return {
+      settings: require("../../data/theme.json"),
+    }
   },
   metaInfo() {
     return {

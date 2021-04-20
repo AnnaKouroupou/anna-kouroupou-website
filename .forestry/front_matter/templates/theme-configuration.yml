@@ -30,5 +30,8 @@ fields:
 - type: boolean
   name: dark_mode
   label: Dark mode
+- name: contact_email
+  label: Contact email
+  type: text
 pages:
 - data/theme.json
