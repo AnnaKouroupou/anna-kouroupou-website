@@ -33,5 +33,17 @@ fields:
 - name: contact_email
   label: Contact email
   type: text
+- name: youtube_url
+  label: Contact email
+  type: text
+- name: facebook_url
+  label: Contact email
+  type: text
+- name: instagram_url
+  label: Contact email
+  type: text
+- name: pinterest_url
+  label: Contact email
+  type: text
 pages:
 - data/theme.json
