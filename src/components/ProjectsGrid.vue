@@ -3,7 +3,7 @@
         <div :class="{ project: true, wide: item.node.wide }" v-for="item in projects" :key="item.node.id">
             <g-link :to="item.node.path" class="project-link">
             <g-image
-                :src="item.node.thumbnail"
+                :src="item.node.photos[0]"
                 :alt="item.node.title"
                 class="thumbnail"
             />

@@ -4,11 +4,38 @@
       <div class="container">
         <div class="project-header">
           <div class="project-details">
-            <g-image
-              :src="$page.post.thumbnail"
-              :alt="$page.post.title"
-              class="thumbnail"
-            />
+            <div class="project-photos">
+              <div
+                v-if="$page.post.photos.length > 1"
+                class="project-more-photos"
+              >
+                <g-image
+                  v-for="(photo, index) in $page.post.photos"
+                  v-show="index !== currentPhotoIndex"
+                  :key="photo"
+                  :src="photo"
+                  :alt="$page.post.title"
+                  v-on:click="selectPhoto(index)"
+                  class="thumbnail"
+                />
+              </div>
+              <div
+                v-if="$page.post.photos.length > 1"
+                class="project-photos-divider"
+              >
+                <div></div>
+              </div>
+              <div class="project-current-photo">
+                <g-image
+                  :src="$page.post.photos[currentPhotoIndex]"
+                  :alt="$page.post.title"
+                  class="thumbnail"
+                />
+                <div v-on:click="openFullscreen" class="overlay">
+                  <div><font-awesome :icon="['fas', 'expand']" /></div>
+                </div>
+              </div>
+            </div>
 
             <div class="project-info">
               <h1 class="project-title" v-html="$page.post.title" />
@@ -35,7 +62,11 @@
               </div>
 
               <div class="contact-us">
-                <a :href="`mailto:${settings.contact_email}?subject=I'm interested about project: ${$page.post.title}`" class="button">ask me about the project</a>
+                <a
+                  :href="`mailto:${settings.contact_email}?subject=I'm interested about project: ${$page.post.title}`"
+                  class="button"
+                  >ask me about the project</a
+                >
               </div>
             </div>
           </div>
@@ -45,6 +76,16 @@
       </div>
     </div>
     <LatestJournals :journals="$page.journals.edges" />
+    <div v-if="isFullscreen" class="fullscreen-photo">
+      <g-image
+        :src="$page.post.photos[currentPhotoIndex]"
+        :alt="$page.post.title"
+        class="thumbnail"
+      />
+      <div v-on:click="closeFullscreen" class="fullscreen-photo-close">
+        <font-awesome :icon="['fas', 'times']" />
+      </div>
+    </div>
   </Layout>
 </template>
 
@@ -52,7 +93,7 @@
 query ProjectPost ($path: String!) {
   post: projectPost (path: $path) {
     title
-    thumbnail (quality: 90)
+    photos
     date (format: "YYYY")
     content
     categories
@@ -72,16 +113,29 @@ query ProjectPost ($path: String!) {
 </page-query>
 
 <script>
-import LatestJournals from "@/components/LatestJournals"
+import LatestJournals from "@/components/LatestJournals";
 
 export default {
   components: {
-    LatestJournals
+    LatestJournals,
   },
   data() {
     return {
       settings: require("../../data/theme.json"),
-    }
+      currentPhotoIndex: 0,
+      isFullscreen: false,
+    };
+  },
+  methods: {
+    selectPhoto(index) {
+      this.currentPhotoIndex = index;
+    },
+    openFullscreen() {
+      this.isFullscreen = true;
+    },
+    closeFullscreen() {
+      this.isFullscreen = false;
+    },
   },
   metaInfo() {
     return {
@@ -92,6 +146,28 @@ export default {
 </script>
 
 <style scoped>
+.fullscreen-photo {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+.fullscreen-photo .thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.fullscreen-photo-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
 .project-header {
   padding: 2rem 0 4rem 0;
 }
@@ -110,9 +186,65 @@ export default {
   display: flex;
   flex-direction: column;
 }
-.thumbnail {
-  height: 400px;
+.project-photos {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.project-more-photos {
+  width: 100%;
+  padding: 10px 0;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  flex-grow: 0;
+  overflow: auto;
+}
+.project-photos-divider {
+  align-self: stretch;
+  padding: 0 5px;
+}
+.project-photos-divider div {
+  width: 100%;
+  height: 1px;
+  background-color: lightgray;
+}
+.project-current-photo {
+  position: relative;
+}
+.project-current-photo .overlay {
+  position: absolute;
+  transition: opacity 0.15s ease;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  color: white;
+  font-size: 1.4rem;
+}
+.project-current-photo:hover .overlay {
+  cursor: pointer;
+  opacity: 0.4;
+}
+.project-current-photo .overlay div {
+  padding: 5px 10px;
+}
+.project-more-photos .thumbnail {
+  padding: 5px;
+  cursor: pointer;
   object-fit: contain;
+  max-height: 100%;
+}
+.project-current-photo .thumbnail {
+  object-fit: contain;
+  object-position: center;
+  height: 400px;
 }
 .project-info > div {
   margin-top: 2rem;
@@ -162,6 +294,18 @@ export default {
 @media (min-width: 920px) {
   .project-details {
     grid-template-columns: 2fr 1fr;
+  }
+  .project-more-photos {
+    height: 400px;
+    width: 100px;
+    flex-direction: column;
+  }
+  .project-photos {
+    flex-direction: row;
+  }
+  .project-photos-divider div {
+    height: 100%;
+    width: 1px;
   }
 }
 </style>

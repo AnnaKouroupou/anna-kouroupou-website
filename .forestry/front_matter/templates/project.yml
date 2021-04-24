@@ -2,9 +2,9 @@
 label: Project
 hide_body: false
 fields:
-- type: file
-  name: thumbnail
-  label: Thumbnail
+- type: image_gallery
+  name: photos
+  label: Photos
   description: This will only show up on the front page
 - type: boolean
   name: wide

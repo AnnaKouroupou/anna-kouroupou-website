@@ -3,7 +3,24 @@ date: 2019-05-16
 year: 2019
 title: Banana
 category: Identity
-thumbnail: "/uploads/project-4.jpg"
+photos:
+- "/uploads/project-4.jpg"
+- "/uploads/project-2.jpg"
+- "/uploads/project-2.jpg"
+- "/uploads/project-2.jpg"
+- "/uploads/project-2.jpg"
+- "/uploads/project-2.jpg"
+- "/uploads/project-2.jpg"
+- "/uploads/project-2.jpg"
+- "/uploads/project-2.jpg"
+- "/uploads/project-2.jpg"
+- "/uploads/project-2.jpg"
+- "/uploads/project-2.jpg"
+- "/uploads/project-2.jpg"
+- "/uploads/project-2.jpg"
+- "/uploads/project-2.jpg"
+- "/uploads/project-2.jpg"
+- "/uploads/project-2.jpg"
 wide: true
 categories:
 - table
