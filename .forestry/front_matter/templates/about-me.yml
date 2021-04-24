@@ -1,0 +1,14 @@
+---
+label: Journal
+hide_body: false
+fields:
+- type: file
+  name: photo
+  label: Photo
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+pages:
+- journal/about-me.md

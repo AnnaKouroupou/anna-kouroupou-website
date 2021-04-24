@@ -1,99 +1,80 @@
 <template>
   <Layout>
     <div class="container">
-
-      <div class="contact-header">
-        <h1 class="contact-title">Say hi!</h1>
-        <p>Leave me a note with any questions you might have, I'll get back to you as soon as possible.</p>
+      <div class="about-me-header">
+        <g-image
+          :src="$page.aboutMe.photo"
+          alt="anna kouroupou"
+          class="thumbnail"
+        />
+        <div class="about-me-titles">
+          <h1 class="about-me-title">Hello!</h1>
+          <h1 v-html="$page.aboutMe.title" class="about-me-title" />
+        </div>
       </div>
-
-      <form class="contact-form" name="contact">
-
-        <div class="sender-info">
-          <div>
-            <label for="name" class="label">Your name</label>
-            <input type="text" name="name" />
-          </div>
-          <div>
-            <label for="email" class="label">Your email</label>
-            <input type="email" name="email" />
-          </div>
-        </div>
-
-        <div class="message">
-          <label for="message" class="label">Message</label>
-          <textarea name="message"></textarea>
-        </div>
-
-        <button class="button">Submit form</button>
-
-      </form>
-
+      <JournalContent :content="$page.aboutMe.content" />
     </div>
   </Layout>
 </template>
 
+<page-query>
+query {
+  aboutMe: aboutMePost(path: "/data/about-me/") {
+    id
+    title
+    photo
+    content
+  }
+}
+</page-query>
+
 <script>
-export default {}
+import JournalContent from "@/components/JournalContent";
+
+export default {
+  components: {
+    JournalContent,
+  },
+};
 </script>
 
 <style scoped>
-.contact-header {
+.about-me-header {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
   padding: 2rem 0 4rem 0;
 }
-.contact-title {
-  font-size: 4rem;
-  margin: 0 0 4rem 0;
-  padding: 0;
-}
-.sender-info {
-  display: flex;
-  flex-wrap: wrap;
+.about-me-header .thumbnail {
+  width: 100%;
   margin-bottom: 2rem;
 }
-.sender-info > div {
-  flex: 1;
-  margin-right: 4rem;
+.about-me-titles {
+  margin-bottom: 1rem;
 }
-.sender-info > div:last-of-type {
-  margin: 0;
+.about-me-title {
+  font-size: 3rem;
+  margin: 0 0 1rem 0;
+  padding: 0;
 }
-input:focus,textarea:focus {
-  border-color: var(--color-contrast-1);
+
+.about-me-title:last-of-type {
+  margin-bottom: 0;
 }
-input,textarea {
-  background: transparent;
-  border: 1px solid var(--color-base-1);
-  outline: none;
-  border-radius: 0.3rem;
-  padding: 0.8rem 1rem;
-  color: inherit;
-  font-size: 1rem;
-  width: 100%;
-}
-textarea {
-  resize: none;
-  height: 140px;
-}
-.button {
-  color: var(--color-base);
-  background: var(--color-contrast);
-  outline: none;
-  border: 0;
-  font-size: 0.8rem;
-  padding: 0.8rem 1.6rem;
-  border-radius: 0.3rem;
-  margin-top: 2rem;
-  cursor: pointer;
-  transition: opacity 0.25s ease;
-  font-size: 500;
-  letter-spacing: 0.035em;
-}
-.button:hover {
-  opacity: 0.6;
-}
-.button:focus {
-  border: 1px solid var(--color-base-1);
+
+@media (min-width: 920px) {
+  .about-me-header {
+    flex-direction: row;
+  }
+  .about-me-header .thumbnail {
+    width: 400px;
+    margin-bottom: 8rem;
+  }
+  .about-me-titles {
+    padding: 3rem 3rem 0;
+    background-color: white;
+    margin-left: -4rem;
+  }
 }
 </style>
 

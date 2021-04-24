@@ -21,6 +21,9 @@ sections:
 - type: document
   path: data/theme.json
   label: Theme config
+- type: document
+  path: data/about-me.md
+  label: About Me
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
