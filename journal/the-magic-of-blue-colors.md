@@ -1,7 +1,6 @@
 ---
 date: 2019-05-18
 title: The magic of blue colors
-author: Nichlas W. Andersen
 excerpt: Acryling pouring
 
 ---

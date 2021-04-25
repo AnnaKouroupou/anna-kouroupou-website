@@ -1,7 +1,6 @@
 ---
 date: 2019-05-17
 title: My first Dutch pour
-author: Nichlas W. Andersen
 excerpt: Finaly!
 
 ---

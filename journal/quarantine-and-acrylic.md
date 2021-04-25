@@ -1,7 +1,6 @@
 ---
 date: 2019-06-04
 title: Quarantine and acrylic
-author: Nichlas W. Andersen
 excerpt: One meter canvas on the floor
 
 ---

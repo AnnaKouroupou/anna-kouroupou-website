@@ -1,7 +1,6 @@
 ---
 date: 2019-06-07
 title: Purple and Green
-author: Nichlas W. Andersen
 excerpt: Dutch pour with a hairdryer
 
 ---
