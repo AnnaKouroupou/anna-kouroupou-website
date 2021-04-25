@@ -1,29 +1,12 @@
 ---
 date: 2019-05-16
 year: 2019
-title: Banana
-category: Identity
+title: Faces
 photos:
-- "/uploads/project-4.jpg"
-- "/uploads/project-2.jpg"
-- "/uploads/project-2.jpg"
-- "/uploads/project-2.jpg"
-- "/uploads/project-2.jpg"
-- "/uploads/project-2.jpg"
-- "/uploads/project-2.jpg"
-- "/uploads/project-2.jpg"
-- "/uploads/project-2.jpg"
-- "/uploads/project-2.jpg"
-- "/uploads/project-2.jpg"
-- "/uploads/project-2.jpg"
-- "/uploads/project-2.jpg"
-- "/uploads/project-2.jpg"
-- "/uploads/project-2.jpg"
-- "/uploads/project-2.jpg"
-- "/uploads/project-2.jpg"
+- "/uploads/project-1.jpg"
 outOfStock: true
 categories:
-- table
+- black & white
 - acrylic pour
 ---
-The **banana** fruits grow from a **banana** blossom in hanging clusters, also called a bunch or **banana** stem. The fruits grow in rows called tiers or hands. There can be as many as twenty fruits to a hand, and as many as twenty tiers in a bunch. A bunch usually weighs between 30 and 50 kilograms (65 to 110 pounds).
+Mauris gravida ipsum et orci **accumsan** feugiat. Curabitur finibus id purus sed rutrum. Morbi consequat malesuada lacus. Aliquam **erat** volutpat. Duis eu velit risus. Sed ac tempor risus. Proin dui purus, *fermentum* ac quam ac, laoreet efficitur purus. Nunc cursus nisi sed feugiat tincidunt. Nullam euismod nisi vitae diam finibus imperdiet. Nulla vel erat urna. Phasellus gravida mi a euismod tempor.
