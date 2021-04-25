@@ -5,11 +5,9 @@ fields:
 - type: image_gallery
   name: photos
   label: Photos
-  description: This will only show up on the front page
 - type: boolean
-  name: wide
-  label: Wide Thumbnail
-  description: This project will take the space of 2 projects on the grid!
+  name: outOfStock
+  label: Out of Stock
 - type: text
   name: title
   label: Title

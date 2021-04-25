@@ -2,9 +2,8 @@
   <Layout>
     <div class="container">
       <Hero />
-      <ProjectsGrid :projects="$page.projects.edges" />
+      <LatestProjects :projects="$page.projects.edges" />
     </div>
-    <LatestJournals :journals="$page.journals.edges" />
   </Layout>
 </template>
 
@@ -18,34 +17,21 @@ query Posts {
         title
         categories
         photos
-        wide
         path
       }
     }
   },
-  journals: allJournalPost (perPage: 3) {
-    edges {
-      node {
-        id
-        path
-        title
-        date (format: "D MMMM YYYY")
-      }
-    }
-  }
 }
 </page-query>
 
 <script>
-import Hero from "@/components/Hero"
-import ProjectsGrid from "@/components/ProjectsGrid"
-import LatestJournals from "@/components/LatestJournals"
+import Hero from "@/components/Hero";
+import LatestProjects from "@/components/LatestProjects";
 
 export default {
   components: {
     Hero,
-    ProjectsGrid,
-    LatestJournals
-  }
-}
+    LatestProjects,
+  },
+};
 </script>

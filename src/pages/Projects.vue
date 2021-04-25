@@ -28,7 +28,6 @@ query Journal {
         title
         categories
         photos
-        wide
         path
       }
     }

@@ -57,8 +57,8 @@
                 <div v-html="$page.post.date" />
               </div>
 
-              <div class="out-of-stock">
-                <span>Out of Stock</span>
+              <div v-if="$page.post.outOfStock" class="out-of-stock">
+                <div>Out of Stock</div>
               </div>
 
               <div class="contact-us">
@@ -75,7 +75,6 @@
         <div v-html="$page.post.content" class="content" />
       </div>
     </div>
-    <LatestJournals :journals="$page.journals.edges" />
     <div v-if="isFullscreen" class="fullscreen-photo">
       <g-image
         :src="$page.post.photos[currentPhotoIndex]"
@@ -94,31 +93,16 @@ query ProjectPost ($path: String!) {
   post: projectPost (path: $path) {
     title
     photos
+    outOfStock
     date (format: "YYYY")
     content
     categories
   },
-  journals: allJournalPost (perPage: 3) {
-    edges {
-      node {
-        id
-        path
-        title
-        date (format: "D MMMM YYYY")
-      }
-    }
-  }
-
 }
 </page-query>
 
 <script>
-import LatestJournals from "@/components/LatestJournals";
-
 export default {
-  components: {
-    LatestJournals,
-  },
   data() {
     return {
       settings: require("../../data/theme.json"),
@@ -258,7 +242,11 @@ export default {
 .category:last-of-type:after {
   content: "";
 }
-.out-of-stock span {
+.out-of-stock {
+  display: flex;
+  justify-content: flex-start;
+}
+.out-of-stock div {
   padding: 0.5rem 0.8rem;
   color: #ef233c;
   border: 2px solid #ef233c;

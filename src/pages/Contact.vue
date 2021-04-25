@@ -12,30 +12,12 @@
           <h1 v-html="$page.aboutMe.title" class="about-me-title" />
         </div>
       </div>
-      <JournalContent :content="$page.aboutMe.content" />
     </div>
   </Layout>
 </template>
 
-<page-query>
-query {
-  aboutMe: aboutMePost(path: "/data/about-me/") {
-    id
-    title
-    photo
-    content
-  }
-}
-</page-query>
-
 <script>
-import JournalContent from "@/components/JournalContent";
-
-export default {
-  components: {
-    JournalContent,
-  },
-};
+export default {};
 </script>
 
 <style scoped>

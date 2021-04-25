@@ -21,7 +21,7 @@ photos:
 - "/uploads/project-2.jpg"
 - "/uploads/project-2.jpg"
 - "/uploads/project-2.jpg"
-wide: true
+outOfStock: true
 categories:
 - table
 - acrylic pour
