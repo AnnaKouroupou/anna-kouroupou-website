@@ -29,6 +29,7 @@ fields:
   label: Categories
 pages:
 - projects/3d-graff.md
+- projects/box.md
 - projects/ios-concept.md
 - projects/iris.md
 - projects/queen.md
