@@ -4,7 +4,7 @@ photos:
 - "/uploads/img_0349.jpg"
 - "/uploads/img_0350.jpg"
 outOfStock: false
-title: '"Green snake"'
+title: '"Green snake" '
 categories: []
 
 ---
