@@ -29,6 +29,7 @@ fields:
   label: Categories
 pages:
 - projects/3d-graff.md
+- projects/alice-in-wonderland.md
 - projects/box.md
 - projects/gray-in-black.md
 - projects/green-snake.md
