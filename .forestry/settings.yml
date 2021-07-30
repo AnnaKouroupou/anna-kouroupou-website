@@ -12,6 +12,13 @@ sections:
   templates:
   - project
 - type: directory
+  path: products
+  label: Products
+  create: documents
+  match: "**/*.md"
+  templates:
+  - product
+- type: directory
   path: journal
   label: Journal
   create: documents

@@ -2,10 +2,10 @@
 // Learn more: https://gridsome.org/docs/config
 
 module.exports = {
-  siteName: "Portfolio",
+  siteName: "Anna Kouroupou",
   siteUrl: `https://www.itsnwa.com`,
   host: "0.0.0.0",
-  titleTemplate: "%s - NWA",
+  titleTemplate: "Anna Kouroupou",
   siteDescription: "Creative technologist",
   plugins: [
     {
@@ -13,6 +13,18 @@ module.exports = {
       options: {
         path: "projects/**/*.md",
         typeName: "ProjectPost",
+        resolveAbsolutePaths: true,
+        remark: {
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"]
+        }
+      }
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "products/**/*.md",
+        typeName: "ProductPost",
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",

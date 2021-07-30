@@ -2,19 +2,33 @@
   <Layout>
     <div class="container">
       <Hero />
-      <LatestProjects :projects="$page.projects.edges" />
+      <LatestProjects :projects="items" />
     </div>
   </Layout>
 </template>
 
 <page-query>
 query Posts {
-	projects: allProjectPost (perPage: 3){
+	projects: allProjectPost {
     edges {
       node {
         id
         date (format: "YYYY")
         title
+        showInHomePage
+        categories
+        photos
+        path
+      }
+    }
+  },
+	products: allProductPost {
+    edges {
+      node {
+        id
+        date (format: "YYYY")
+        title
+        showInHomePage
         categories
         photos
         path
@@ -33,5 +47,13 @@ export default {
     Hero,
     LatestProjects,
   },
+  computed: {
+    items: function() {
+      const projects = this.$page.projects.edges.filter((edge) => edge.node.showInHomePage);
+      const products = this.$page.products.edges.filter((edge) => edge.node.showInHomePage);
+      const data = [...products, ...projects];
+      return data;
+    },
+  }
 };
 </script>

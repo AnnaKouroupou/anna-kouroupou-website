@@ -1,5 +1,5 @@
 ---
-label: Project
+label: Product
 hide_body: false
 fields:
 - type: image_gallery
@@ -31,12 +31,12 @@ fields:
   name: categories
   label: Categories
 pages:
-- projects/3d-graff.md
-- projects/alice-in-wonderland.md
-- projects/box.md
-- projects/gray-in-black.md
-- projects/green-snake.md
-- projects/ios-concept.md
-- projects/iris.md
-- projects/queen.md
-- projects/royal.md
+- products/3d-graff.md
+- products/alice-in-wonderland.md
+- products/box.md
+- products/gray-in-black.md
+- products/green-snake.md
+- products/ios-concept.md
+- products/iris.md
+- products/queen.md
+- products/royal.md

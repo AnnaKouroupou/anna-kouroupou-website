@@ -3,6 +3,7 @@ photos:
 - "/uploads/project-11.jpg"
 title: Chess
 date: 2019-01-04
+showInHomePage: false
 categories:
 - black & white
 ---

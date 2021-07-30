@@ -4,6 +4,7 @@ photos:
 - "/uploads/img_20191101_185145.jpg"
 - "/uploads/img_20191101_132448.jpg"
 outOfStock: true
+showInHomePage: true
 title: '"Alice in Wonderland"'
 categories: []
 

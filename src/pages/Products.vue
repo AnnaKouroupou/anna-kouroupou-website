@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="container">
-      <h2>Projects</h2>
+      <h2>Products</h2>
       <div class="categories">
         <div class="label">Categories</div>
         <div class="category-options">
@@ -14,14 +14,14 @@
           ></button>
         </div>
       </div>
-      <ProjectsGrid :projects="projects" />
+      <ProductsGrid :products="products" />
     </div>
   </Layout>
 </template>
 
 <page-query>
 query Journal {
-	projects: allProjectPost {
+	products: allProductPost {
     edges {
       node {
         id
@@ -37,11 +37,11 @@ query Journal {
 </page-query>
 
 <script>
-import ProjectsGrid from "@/components/ProjectsGrid";
+import ProductsGrid from "@/components/ProductsGrid";
 
 export default {
   components: {
-    ProjectsGrid,
+    ProductsGrid,
   },
   data: function () {
     return {
@@ -59,12 +59,12 @@ export default {
     }
   },
   computed: {
-    projects: function () {
+    products: function () {
       if (!this.selectedCategory) {
-        return this.$page.projects.edges;
+        return this.$page.products.edges;
       }
 
-      const p = this.$page.projects.edges.filter((edge) =>
+      const p = this.$page.products.edges.filter((edge) =>
         edge.node.categories.includes(this.selectedCategory)
       );
       return p;
@@ -74,7 +74,7 @@ export default {
         return self.indexOf(value) === index;
       }
 
-      const c = this.$page.projects.edges
+      const c = this.$page.products.edges
         .map((e) => e.node.categories)
         .reduce((arr, c) => [...arr, ...c], [])
         .filter(onlyUnique)

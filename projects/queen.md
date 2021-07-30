@@ -5,6 +5,7 @@ photos:
 - "/uploads/img_20201219_142948.jpeg"
 - "/uploads/img_20201219_142832.jpeg"
 outOfStock: true
+showInHomePage: true
 title: '"Queen"'
 categories: []
 

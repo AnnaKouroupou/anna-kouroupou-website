@@ -13,6 +13,7 @@
       <button class="mobile-menu" v-on:click="toggleMobileMenu">menu</button>
       <nav class="nav right">
         <g-link class="nav__link" to="/projects">Projects</g-link>
+        <g-link class="nav__link" to="/products">Products</g-link>
         <g-link class="nav__link" to="/journal">News & More</g-link>
         <g-link class="nav__link" to="/contact">About Me</g-link>
       </nav>
@@ -20,6 +21,7 @@
     <div v-if="isMobileMenuOpen" class="container container-mobile">
       <nav class="mobile-nav">
         <g-link class="nav__link" to="/projects">Projects</g-link>
+        <g-link class="nav__link" to="/products">Products</g-link>
         <g-link class="nav__link" to="/journal">News & More</g-link>
         <g-link class="nav__link" to="/contact">About Me</g-link>
       </nav>
@@ -63,7 +65,7 @@ export default {
   text-decoration: none;
 }
 .logo {
-  height: 1.5rem;
+  height: 3rem;
 }
 .site-name {
   font-size: 0.9rem;

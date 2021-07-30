@@ -24,13 +24,6 @@
         </div>
       </g-link>
     </div>
-    <div key="see-more" class="project project-link-to-more">
-      <g-link to="/projects" class="project-link">
-        <span>Explore</span>
-        <span>my</span>
-        <span>projects</span>
-      </g-link>
-    </div>
   </div>
 </template>
 
