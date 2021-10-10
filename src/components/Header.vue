@@ -4,7 +4,7 @@
       <div class="left">
         <g-link :to="{ name: 'home' }" class="home-link">
           <img
-            src="../../static/logo.svg"
+            src="../../static/logo_v2.svg"
             :alt="settings.site_name"
             class="logo"
           />
@@ -12,18 +12,18 @@
       </div>
       <button class="mobile-menu" v-on:click="toggleMobileMenu">menu</button>
       <nav class="nav right">
-        <g-link class="nav__link" to="/projects">Projects</g-link>
-        <g-link class="nav__link" to="/products">Products</g-link>
-        <g-link class="nav__link" to="/journal">News & More</g-link>
-        <g-link class="nav__link" to="/contact">About Me</g-link>
+        <g-link class="nav__link" to="/contact">about me</g-link>
+        <g-link class="nav__link" to="/journal">news & more</g-link>
+        <g-link class="nav__link" to="/projects">projects</g-link>
+        <g-link class="nav__link button" to="/products">products</g-link>
       </nav>
     </div>
     <div v-if="isMobileMenuOpen" class="container container-mobile">
       <nav class="mobile-nav">
-        <g-link class="nav__link" to="/projects">Projects</g-link>
-        <g-link class="nav__link" to="/products">Products</g-link>
-        <g-link class="nav__link" to="/journal">News & More</g-link>
-        <g-link class="nav__link" to="/contact">About Me</g-link>
+        <g-link class="nav__link" to="/contact">about me</g-link>
+        <g-link class="nav__link" to="/journal">news & more</g-link>
+        <g-link class="nav__link" to="/projects">projects</g-link>
+        <g-link class="nav__link" to="/products">products</g-link>
       </nav>
     </div>
   </header>
@@ -50,16 +50,17 @@ export default {
 .header {
   position: relative;
   z-index: 10;
-  background-color: white;
 }
 .header > .container:not(.container-mobile) {
   /* height: 6rem; */
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  max-width: 100%;
+  border-bottom: 1px solid #ececec;
 }
 .home-link {
   text-decoration: none;
@@ -129,8 +130,21 @@ export default {
   text-decoration: none;
   border: none;
   background-color: white;
+  color: var(--color-main);
 }
 
+.nav__link {
+  color: #9b23ea;
+}
+.nav__link.button {
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  color: white;
+  background-image: linear-gradient(to left top, #5f72bd 0%, #9b23ea 100%);
+}
+.nav__link.button.active {
+  border: none;
+}
 @media (min-width: 860px) {
   .nav {
     display: block;

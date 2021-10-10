@@ -130,6 +130,9 @@ export default {
 </script>
 
 <style scoped>
+.product {
+  flex: 1;
+}
 .fullscreen-photo {
   z-index: 10;
   position: fixed;
@@ -262,7 +265,7 @@ export default {
 .button {
   text-decoration: none;
   color: var(--color-base);
-  background: var(--color-main);
+  background-image: linear-gradient(to left top, #5f72bd 0%, #9b23ea 100%);
   outline: none;
   border: 0;
   font-size: 0.8rem;

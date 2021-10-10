@@ -43,7 +43,7 @@ export default {
 }
 
 body {
-  --color-main: #00afb9;
+  --color-main: #9b23ea;
   --color-base: rgb(255, 255, 255);
   --color-base-1: rgb(243, 243, 243);
   --color-contrast: rgb(0, 0, 0);
@@ -70,6 +70,10 @@ h1 {
 
 .layout {
   padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, #ffffff 40%, #9b23ea1f 150%);
 }
 
 .container {
