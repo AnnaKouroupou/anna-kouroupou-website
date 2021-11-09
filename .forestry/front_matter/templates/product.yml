@@ -31,7 +31,6 @@ fields:
   name: categories
   label: Categories
 pages:
-- products/funny.md
 - products/gray-in-black.md
 - products/green-snake.md
 - products/ios-concept.md
