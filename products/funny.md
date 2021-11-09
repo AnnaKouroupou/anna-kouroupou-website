@@ -1,11 +1,12 @@
 ---
 date: 2021-11-09
 photos:
-- "/uploads/img_20191101_185145.jpg"
-- "/uploads/img_20191101_132448.jpg"
+- "/uploads/img_0916.jpeg"
+- "/uploads/img_0918.jpeg"
+- "/uploads/img_0919.jpeg"
 showInHomePage: false
 outOfStock: true
-title: '"Funny"'
+title: '"Green light "'
 categories: []
 
 ---
