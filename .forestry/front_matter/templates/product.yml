@@ -31,12 +31,8 @@ fields:
   name: categories
   label: Categories
 pages:
-- products/3d-graff.md
-- products/alice-in-wonderland.md
-- products/box.md
+- products/funny.md
 - products/gray-in-black.md
 - products/green-snake.md
 - products/ios-concept.md
 - products/iris.md
-- products/queen.md
-- products/royal.md
