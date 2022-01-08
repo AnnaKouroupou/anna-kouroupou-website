@@ -6,7 +6,7 @@ photos:
 - "/uploads/img_20201219_142832.jpeg"
 outOfStock: true
 showInHomePage: true
-title: '"Queen"'
+title: '"Queen". '
 categories: []
 
 ---
