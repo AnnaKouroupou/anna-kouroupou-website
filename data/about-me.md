@@ -1,9 +1,8 @@
 ---
 title: My name is Anna Kouroupou and I create art
-photo: "/uploads/anna-about-me.jpg"
+photo: ''
 
 ---
-
 Nulla quis blandit turpis. In eros nisl, aliquam vitae turpis non, feugiat ullamcorper odio. Vivamus sem nibh, lacinia nec velit in, tempor consectetur turpis. Duis sit amet sapien in enim blandit laoreet sit amet vulputate eros. Phasellus convallis vel ex eget aliquam. Suspendisse dapibus, odio sed imperdiet egestas, massa enim pellentesque augue, nec fermentum libero orci eu lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas augue libero, tempor vel tincidunt eu, blandit eu orci. Phasellus eleifend luctus sodales. Curabitur dignissim non lacus et eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
 
 #### Etiam feugiat justo
