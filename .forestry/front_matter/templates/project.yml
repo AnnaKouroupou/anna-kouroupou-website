@@ -32,6 +32,7 @@ fields:
   label: Categories
 pages:
 - projects/3d-graff.md
+- projects/agly-duckling.md
 - projects/alice-in-wonderland.md
 - projects/arlekin.md
 - projects/black-charm.md
