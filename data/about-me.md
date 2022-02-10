@@ -1,16 +1,22 @@
 ---
-title: My name is Anna Kouroupou and I create art
+title: I am Anna. Welcome to my world
 photo: ''
 
 ---
-Nulla quis blandit turpis. In eros nisl, aliquam vitae turpis non, feugiat ullamcorper odio. Vivamus sem nibh, lacinia nec velit in, tempor consectetur turpis. Duis sit amet sapien in enim blandit laoreet sit amet vulputate eros. Phasellus convallis vel ex eget aliquam. Suspendisse dapibus, odio sed imperdiet egestas, massa enim pellentesque augue, nec fermentum libero orci eu lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas augue libero, tempor vel tincidunt eu, blandit eu orci. Phasellus eleifend luctus sodales. Curabitur dignissim non lacus et eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+Απο παιδί μου άρεσε να δημιουργώ κόσμους.
 
-#### Etiam feugiat justo
+Σε πολλές στιγμές της ζωής μου,δεν μου άρεσε αυτός ο κόσμος.Έβρισκα προσωρινά μα φωτεινά καταφύγια στη γραφή.
 
-Eget leo aliquam, ac gravida leo sollicitudin. Integer a lobortis ligula. Nullam vitae dictum tellus, ut elementum velit. Integer sit amet eleifend quam. Nullam non pretium lorem. Ut nec turpis semper, ullamcorper eros a, sollicitudin massa. Proin vitae mauris vulputate, malesuada massa sed, vehicula ex. Phasellus viverra tempus justo, in elementum dolor mattis et. Nunc a dui id dui placerat consectetur. Vestibulum condimentum elit aliquam velit tempus, quis elementum ligula accumsan.
+Σε άλλες στιγμές,αλλιώτικα όμορφες,ξεφάντωνα με τα παιδιά της γειτονιάς,κάπου στην Ακαδημία Πλάτωνος.Σε άσφαλτο που τα καλοκαίρια 'εκαιγε τα γυμνά μου πόδια.
 
-Mauris gravida ipsum et orci accumsan feugiat. Curabitur finibus id purus sed rutrum. Morbi consequat malesuada lacus. Aliquam erat volutpat. Duis eu velit risus. Sed ac tempor risus. Proin dui purus, fermentum ac quam ac, laoreet efficitur purus. Nunc cursus nisi sed feugiat tincidunt. Nullam euismod nisi vitae diam finibus imperdiet. Nulla vel erat urna. Phasellus gravida mi a euismod tempor.
+Υπήρχαν και κάποιες άλλες μαγικές,πάντα πρωτόγνωρες,χωμένο σε αγκαλιές,με μικρά φτερά στις άκρες των χειλιών μου.Πετούσαν σε άλλα σύμπαντα με τη μορφή μου απαγίωτη,λυρική σαν ελεγεία,μεταμορφωμένη.
 
-#### Nunc vitae
+Μα πάντα έγραφα.Ακόμη και όταν κατέκτησα τη μορφή μου,την έπλασα,την έκανα φίλη με την ψυχή μου,πάλι έγραφα.Δημιουργούσα ή αναμόχλευα άλλα δευτερόλεπτα απ τη ξενοιασιά μου.Και Άννα-κάτευα τα υλικά με στόχο οτι πιο αρμονικό και καλίμορφο.
 
-Pharetra turpis, sit amet semper libero. Nulla facilisi. Morbi rhoncus orci a tincidunt lacinia. In lacinia, ipsum ut pretium eleifend, tellus lectus imperdiet sem, at aliquet orci lectus ut arcu. Quisque convallis lectus turpis, sed rhoncus ligula varius nec. Aliquam consequat leo sed eleifend viverra. Donec id accumsan sem. Duis tincidunt neque sed odio fermentum posuere. Vivamus mauris nisi, sodales elementum purus sodales, varius convallis quam. Nulla at turpis vel purus blandit auctor vitae hendrerit orci. Phasellus a accumsan purus.
+Όταν στέρεψαν οι λέξεις βρήκα τα χρώματα.Καινούρια μαγεία.
+
+Καμβάδες,ακρυλικά,πινέλα,ανακατέματα,ένας υπέροχος πλανήτης.
+
+Αισθάνομαι ευτυχία τολμώ να πω, να γεμίζω κάτι κενό. Είτε είναι χαρτί είτε καμβάς, ή ένας μοναχικός κέρσορας σε ένα Word, ένα έπιπλο που έχει μεν μια γεμάτη ζωή αλλά είναι στην παρακμή του.
+
+ Νιώθω πολύ όμορφα να του δίνω ξανά ζωή.
