@@ -7,10 +7,15 @@ photos:
 - "/uploads/img_20200610_133843.jpg"
 showInHomePage: false
 outOfStock: false
-title: Waves on glass
+title: '"Waves on glass"'
 categories:
 - acrylic paint
 - liquid glass
 - resin art
 
 ---
+Δίσκος σερβιρίσματος απο ξύλο.
+
+Επειδή έχει κούρμπα (δλδ περισσότερο βάθος στο κέντρο),χρησιμοποίησα περίπου 1 κιλό εποχική ρητίνη - epoxy resin. 
+
+Τα χρώματα που ανάμειξα με τη ρητίνη,είναι ακρυλικά και σκόνες.
