@@ -10,11 +10,12 @@ fields:
   label: Site description
 - type: textarea
   name: hero_title
-  label: Hero title
   config:
     wysiwyg: true
     schema:
       format: html
+  label: 'Η αλήθεια είναι άσχημη. Και έχουμε την τέχνη για να μη μας σκοτώσει η αλήθεια.Φ.
+    Νίτσε '
 - type: textarea
   name: hero_subtitle
   label: Hero subtitle
