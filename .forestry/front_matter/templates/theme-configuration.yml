@@ -7,7 +7,8 @@ fields:
   label: Site name
 - type: textarea
   name: site_description
-  label: Site description
+  label: 'Η αλήθεια είναι άσχημη. Και έχουμε την τέχνη για να μη μας σκοτώσει η αλήθεια.Φ.
+    Νίτσε '
 - type: textarea
   name: hero_title
   config:
