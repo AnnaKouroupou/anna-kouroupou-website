@@ -2,36 +2,18 @@
   <div class="layout" :class="{ 'sticky-header': $route.path === '/' }">
     <Header />
     <slot/>
-    <LatestJournals :journals="$static.journals.edges" />
     <Footer />
   </div>
 </template>
 
-<static-query>
-query Posts {
-  journals: allJournalPost (perPage: 3) {
-    edges {
-      node {
-        id
-        path
-        title
-        date (format: "D MMMM YYYY")
-      }
-    }
-  }
-}
-</static-query>
-
 <script>
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
-import LatestJournals from "@/components/LatestJournals"
 
 export default {
   components: {
     Header,
     Footer,
-    LatestJournals,
   }
 }
 </script>

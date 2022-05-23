@@ -13,7 +13,6 @@
       <button class="mobile-menu" v-on:click="toggleMobileMenu">menu</button>
       <nav class="nav right">
         <g-link class="nav__link" to="/contact">about me</g-link>
-        <g-link class="nav__link" to="/journal">news & more</g-link>
         <g-link class="nav__link" to="/projects">projects</g-link>
         <g-link class="nav__link button" to="/products">products</g-link>
       </nav>
@@ -21,7 +20,6 @@
     <div v-if="isMobileMenuOpen" class="container container-mobile">
       <nav class="mobile-nav">
         <g-link class="nav__link" to="/contact">about me</g-link>
-        <g-link class="nav__link" to="/journal">news & more</g-link>
         <g-link class="nav__link" to="/projects">projects</g-link>
         <g-link class="nav__link" to="/products">products</g-link>
       </nav>
