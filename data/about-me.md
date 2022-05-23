@@ -1,6 +1,6 @@
 ---
 title: I am Anna. Welcome to my world
-photo: ''
+photo: "/uploads/anna-about-me.jpg"
 
 ---
 Απο παιδί μου άρεσε να δημιουργώ κόσμους.
