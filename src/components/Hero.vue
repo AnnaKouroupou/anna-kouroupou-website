@@ -18,7 +18,6 @@ export default {
 <style>
 .hero {
     text-align: center;
-    width: 480px;
     max-width: 100%;
     margin: 0 auto;
     padding: 4rem 0 8rem 0;
@@ -42,5 +41,10 @@ export default {
     padding: 0;
     margin: 0;
     opacity: 0.6;
+}
+@media (min-width: 920px) {
+  .hero {
+    width: 480px;
+  }
 }
 </style>
