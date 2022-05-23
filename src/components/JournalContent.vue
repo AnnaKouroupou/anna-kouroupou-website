@@ -17,6 +17,7 @@ export default {
 p {
     line-height: 1.5;
     font-size: 1.15rem;
+    line-break: anywhere; 
 }
 h2 {
     font-size: 2rem;
