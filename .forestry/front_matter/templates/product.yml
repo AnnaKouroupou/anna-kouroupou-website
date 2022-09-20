@@ -31,6 +31,7 @@ fields:
   name: categories
   label: Categories
 pages:
+- products/another-wooden-bag.md
 - products/critters.md
 - products/gray-in-black.md
 - products/green-snake.md
