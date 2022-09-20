@@ -6,7 +6,7 @@ photos:
 - "/uploads/img_2501-2.jpg"
 showInHomePage: false
 outOfStock: false
-title: Kitchen
+title: 'Kitchen '
 categories: []
 
 ---
