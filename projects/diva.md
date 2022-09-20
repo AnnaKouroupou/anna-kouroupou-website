@@ -8,7 +8,7 @@ photos:
 - "/uploads/img_3067.jpeg"
 showInHomePage: false
 outOfStock: false
-title: Diva
+title: 'Diva '
 categories: []
 
 ---
