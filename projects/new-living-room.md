@@ -1,6 +1,7 @@
 ---
 date: 2022-09-20
 photos:
+- "/uploads/img_2274.JPG"
 - "/uploads/img_2271.JPG"
 - "/uploads/img_2291.JPG"
 - "/uploads/img_2298.JPG"
