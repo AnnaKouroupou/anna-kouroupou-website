@@ -7,7 +7,7 @@ photos:
 - "/uploads/307196869_1284613385633605_7559450406276497195_n.jpeg"
 showInHomePage: false
 outOfStock: false
-title: Bourgoundy
+title: 'Bourgoundy '
 categories: []
 
 ---
