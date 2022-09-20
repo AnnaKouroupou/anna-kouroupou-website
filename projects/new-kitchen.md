@@ -7,6 +7,7 @@ photos:
 - "/uploads/274567656_683551929739184_5285362527096047891_n.jpg"
 - "/uploads/274533842_691740151979613_4267092161307592534_n.jpg"
 - "/uploads/274347803_1341961346286795_3801475499148384266_n.jpg"
+- "/uploads/img_2211.JPG"
 showInHomePage: true
 outOfStock: false
 title: New kitchen
