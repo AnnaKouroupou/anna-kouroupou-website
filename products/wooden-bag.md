@@ -6,7 +6,7 @@ photos:
 - "/uploads/img_0673.JPG"
 showInHomePage: false
 outOfStock: false
-title: Wooden bag
+title: 'Wooden bag '
 categories: []
 
 ---
