@@ -1,0 +1,12 @@
+---
+date: 2022-09-20
+photos:
+- "/uploads/278464924_1150238529068362_252444865032617189_n.jpg"
+- "/uploads/277855283_1323367534807266_3907364072858246383_n.jpg"
+- "/uploads/277895831_411849854094927_7113912690051877730_n.jpg"
+showInHomePage: false
+outOfStock: false
+title: IKEA
+categories: []
+
+---
